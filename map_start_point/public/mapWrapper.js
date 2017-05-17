@@ -42,6 +42,6 @@ MapWrapper.prototype = {
       console.log("didnt get position")
     };
 
-    navigator.geolocation.getCurrentPosition(success, failure);
+    navigator.geolocation.getCurrentPosition(success.bind(this), failure);
   }
 }
